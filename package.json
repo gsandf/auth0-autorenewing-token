@@ -1,6 +1,6 @@
 {
   "name": "auth0-autorenewing-token",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "description": "A helper for auth0/node-auth0 that handles retrieving/renewing access tokens",
   "repository": "https://github.com/gsandf/auth0-autorenewing-token",
