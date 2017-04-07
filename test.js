@@ -26,7 +26,7 @@ test('retrieves a new token', async t => {
   const renewingToken = new RenewingToken(testData)
 
   const auth0Api = setupAPI()
-  const token = await renewingToken.token
+  const token = await renewingToken.getToken()
   auth0Api.done()
 
   t.is(typeof token, 'string')
@@ -38,10 +38,10 @@ test('reuses token if still valid', async t => {
 
   // Should only make request to API once
   const auth0Api = setupAPI()
-  const token1 = await renewingToken.token
+  const token1 = await renewingToken.getToken()
   auth0Api.done()
 
-  const token2 = await renewingToken.token
+  const token2 = await renewingToken.getToken()
 
   t.deepEqual(token1, token2)
 })

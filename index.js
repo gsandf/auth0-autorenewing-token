@@ -11,7 +11,7 @@ class RenewingToken {
     this.storeToken = this.storeToken.bind(this)
   }
 
-  get token() {
+  getToken() {
     if (this.tokenStillValid()) {
       return Promise.resolve(this.tokenData.access_token)
     }
