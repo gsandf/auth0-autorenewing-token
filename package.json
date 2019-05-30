@@ -19,7 +19,7 @@
     "test": "ava"
   },
   "dependencies": {
-    "axios": "^0.17.0"
+    "axios": "^0.19.0"
   },
   "devDependencies": {
     "ava": "^0.24.0",
